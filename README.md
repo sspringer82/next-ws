@@ -1,5 +1,7 @@
 # Next Workshop
 
+[Repository](https://github.com/sspringer82/next-ws)
+
 ## Setup
 1. Next initialisieren:
 
@@ -21,3 +23,9 @@
    3. `npm start`
 
 ## Links
+- [React Doku](https://react.dev/learn)
+- [Vite](https://vitejs.dev/)
+- [Next](https://nextjs.org/)
+- [NPMTrends](https://npmtrends.com/)
+- [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
+- [Next Tutorial](https://nextjs.org/learn)
