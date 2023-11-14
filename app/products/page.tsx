@@ -1,5 +1,6 @@
 import { fetchProducts } from '@/app/lib/products.api';
 import Search from '@/app/products/search';
+import Link from 'next/link';
 
 type Props = {
   searchParams: {
@@ -20,7 +21,8 @@ export default async function ProductsPage({ searchParams }: Props) {
         {products.map((product) => {
           return (
             <div key={product.id}>
-              {product.name} - {product.price.toFixed(2)} €
+              <Link href={`products/${product.id}`}>{product.name}</Link> -
+              {product.price.toFixed(2)} €
             </div>
           );
         })}
