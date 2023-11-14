@@ -7,3 +7,10 @@ export type Product = {
   weight: number;
   image: string;
 };
+
+export type User = {
+  id: string;
+  name: string;
+  email: string;
+  password: string;
+};

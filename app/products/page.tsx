@@ -5,6 +5,7 @@ import '@/app/products/product.css';
 import '@/app/products/product.scss';
 import styles from '@/app/products/products.module.css';
 import clsx from 'clsx';
+import { addToCart } from '../lib/actions';
 
 type Props = {
   searchParams: {
@@ -40,6 +41,15 @@ export default async function ProductsPage({ searchParams }: Props) {
                 </Link>
               </div>
               <div className="price">{product.price.toFixed(2)} €</div>
+
+              <form action={addToCart}>
+                <input type="hidden" name="product" value={product.id} />
+                <label>
+                  Menge:
+                  <input type="text" name="amount" />
+                </label>
+                <button type="submit">hinzufügen</button>
+              </form>
             </div>
           );
         })}

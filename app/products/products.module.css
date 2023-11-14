@@ -1,6 +1,7 @@
 .productRow {
   display: flex;
   justify-content: space-around;
+  margin: 4px 0;
 }
 
 .active {
