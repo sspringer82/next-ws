@@ -29,3 +29,11 @@
 - [NPMTrends](https://npmtrends.com/)
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 - [Next Tutorial](https://nextjs.org/learn)
+
+## Styling
+- inline styling mit style-Prop und style-objekt
+- css import `import './style.css';`
+- css modules `home.module.css` => import styles from './home.module.css' => <div classname={styles.myDiv}>
+- scss => `npm install sass` => import './myStyle.scss';
+- css-in-js => emotion, styled-components
+- tailwind
