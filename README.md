@@ -29,6 +29,7 @@
 - [NPMTrends](https://npmtrends.com/)
 - [React Three Fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction)
 - [Next Tutorial](https://nextjs.org/learn)
+- [Material Design](https://m3.material.io/)
 
 ## Styling
 - inline styling mit style-Prop und style-objekt
