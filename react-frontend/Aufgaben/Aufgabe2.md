@@ -11,10 +11,12 @@ Nutze useEffect, um beim mounten der Komponente die Daten in den State zu schrei
 useState ist ein generic und akzeptiert den State-Type:
 
 ```ts
+import { useState } from 'react';
 useState<Movie[]>([]);
 ```
 
 ```ts
+import { useEffect } from 'react';
 useEffect(() => {
   // do things
 }, []);
