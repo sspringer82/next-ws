@@ -1,12 +1,12 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import List from "./List";
 import StateLifecycle from "./StateLifecycle";
-const App: React.FC = () => {
-    const [state, setState] = useState(true)
+import ParentChild from "./ParentChild";
 
-    return <div>
-        <button onClick={() => setState(false)}>hide</button>
-        {state && <List />}
-    </div>
+const App: React.FC = () => {
+    return <ParentChild />
 }
+
 export default App;
+
+

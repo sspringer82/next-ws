@@ -7,6 +7,9 @@
 - Vite (setup): https://vite.dev/
 - Tooling company: https://voidzero.dev/
 - https://docs.npmjs.com/cli/v11/configuring-npm/package-json
+- cartoon intro to fiber https://www.youtube.com/watch?v=ZCuYPiUIONs
+- https://overreacted.io/a-complete-guide-to-useeffect/
+- Komponenten Demo: https://storybook.js.org/
 
 ## Generelle Regeln für Komponenten
 - Gültiges HTML

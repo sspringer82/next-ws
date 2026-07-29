@@ -25,19 +25,7 @@ const List: React.FC = () => {
         setTimeout(() => {
             setMovies(moviesData)
         }, 1000);
-        const ival = setInterval(() => {
-            console.log('do horrible things')
-        }, 1000);
-
-        return () => {
-            clearInterval(ival);
-            console.log('UNMOUNT!!!')
-        }
     }, [])
-
-    useEffect(() => {
-        console.log('render + update');
-    })
 
     let tableContent: ReactNode = <tr><td colSpan={2}>Keine Daten vorhanden</td></tr>;
 
@@ -48,17 +36,21 @@ const List: React.FC = () => {
         </tr>);
     }
 
-    return <table>
-        <thead>
-            <tr>
-                <th>Title</th>
-                <th>Year</th>
-            </tr>
-        </thead>
-        <tbody>
-            {tableContent}
-        </tbody>
-    </table>
+    return (
+        <>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {tableContent}
+                </tbody>
+            </table>
+        </>
+    );
 }
 
 export default List;
