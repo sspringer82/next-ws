@@ -7,3 +7,9 @@
 - Vite (setup): https://vite.dev/
 - Tooling company: https://voidzero.dev/
 - https://docs.npmjs.com/cli/v11/configuring-npm/package-json
+
+## Generelle Regeln für Komponenten
+- Gültiges HTML
+- nur ein root element zurückgeben
+- Beginnen mit Großbuchstaben
+- geben immer eine JSX-Struktur zurück
