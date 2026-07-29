@@ -4,7 +4,7 @@ import StateLifecycle from "./StateLifecycle";
 import ParentChild from "./ParentChild";
 
 const App: React.FC = () => {
-    return <ParentChild />
+    return <List />
 }
 
 export default App;

@@ -1,10 +1,7 @@
 import { useEffect, useState, type ReactNode } from "react";
+import ListItem from "./ListItem";
 
-type Movie = {
-    id: string;
-    title: string;
-    year: number;
-};
+import { type Movie } from './Movie'
 
 const moviesData: Movie[] = [
     { id: '1', title: 'The Shawshank Redemption', year: 1994 },
@@ -30,10 +27,7 @@ const List: React.FC = () => {
     let tableContent: ReactNode = <tr><td colSpan={2}>Keine Daten vorhanden</td></tr>;
 
     if (movies.length > 0) {
-        tableContent = movies.map(movie => <tr key={movie.id}>
-            <td>{movie.title}</td>
-            <td>{movie.year}</td>
-        </tr>);
+        tableContent = movies.map(movie => <ListItem key={movie.id} movie={movie} />);
     }
 
     return (
