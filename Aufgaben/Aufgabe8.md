@@ -2,9 +2,20 @@
 
 Erzeuge eine neue Page /movies/[id]/page.tsx
 
-Nutze die Id (`const {id} = await params`), um die Daten des Films vom Server zu laden.
+Nutze die Id, um die Daten des Films vom Server zu laden.
+```ts
+import { NextPage } from "next";
 
-Zeige die Details an.
+type Props = {
+    params: Promise<{ id: string }>
+}
+
+const MovieDetailPage: NextPage<Props> = async ({ params }) => {
+  ...
+}
+```
+
+Zeige die Details an. (die ihr vom Server ladet (http://localhost:3001/movies/<id>))
 
 Füge Links in die Liste zu den Detailseiten hinzu (next/link + href-Attribut)
 
@@ -12,6 +23,6 @@ https://nextjs.org/docs/app/api-reference/components/link
 
 ```ts
 <Link href="/movies/42">details</Link>
+```
 
 Füge in der Detailseite einen Link zurück zur Liste ein.
-```
