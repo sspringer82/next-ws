@@ -24,10 +24,17 @@ const List: React.FC = () => {
         }, 1000);
     }, [])
 
+    function deleteMovie(id: string): void {
+        setMovies(prevMovies => prevMovies.filter(movie => movie.id !== id));
+    }
+
     let tableContent: ReactNode = <tr><td colSpan={2}>Keine Daten vorhanden</td></tr>;
 
     if (movies.length > 0) {
-        tableContent = movies.map(movie => <ListItem key={movie.id} movie={movie} />);
+        tableContent = movies.map(movie => <ListItem
+            key={movie.id}
+            movie={movie}
+            onDelete={deleteMovie} />);
     }
 
     return (

@@ -32,3 +32,12 @@ type Props = {
   onDelete: (id: string) => void
 }
 ```
+
+
+```ts
+const movies = [];
+function deleteEntry(id: number) {
+    return movies.filter((movie) => movie.id !== id);
+}
+```
+
