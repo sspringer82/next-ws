@@ -1,7 +1,7 @@
-import Image from "next/image";
-import List from "./list";
+import List from "../components/list/list";
 
-export default function Home() {
+export default async function Home() {
+
   return (
     <div>
       <h1>Hello World</h1>
