@@ -17,6 +17,7 @@ const List: React.FC = () => {
     // }
 
     const [movies, setMovies] = useState<Movie[]>([]);
+    const [filter, setFilter] = useState('');
 
     useEffect(() => {
         setTimeout(() => {
@@ -31,7 +32,7 @@ const List: React.FC = () => {
     let tableContent: ReactNode = <tr><td colSpan={2}>Keine Daten vorhanden</td></tr>;
 
     if (movies.length > 0) {
-        tableContent = movies.map(movie => <ListItem
+        tableContent = movies.filter(movie => movie.title.toLowerCase().includes(filter.toLowerCase())).map(movie => <ListItem
             key={movie.id}
             movie={movie}
             onDelete={deleteMovie} />);
@@ -39,6 +40,13 @@ const List: React.FC = () => {
 
     return (
         <>
+            <div>
+                <label>Filter:
+                    <input type="text"
+                        value={filter}
+                        onChange={(event) => setFilter(event.target.value)} />
+                </label>
+            </div>
             <table>
                 <thead>
                     <tr>
