@@ -1,7 +1,8 @@
+import ListContainer from "@/components/list/list.container";
 import { NextPage } from "next";
 
 const MoviesPage: NextPage = () => {
-    return <h1>Movies page works</h1>
+    return <ListContainer />
 }
 
 export default MoviesPage;

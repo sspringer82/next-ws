@@ -1,6 +1,6 @@
 # todo
 
-- SSG
+✅ SSG
 - styling
 - Siemens ix
 - api routen + Security
