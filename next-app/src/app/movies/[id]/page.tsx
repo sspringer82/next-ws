@@ -23,3 +23,9 @@ const MovieDetailPage: NextPage<Props> = async ({ params }) => {
     </div>
 }
 export default MovieDetailPage;
+
+export async function generateStaticParams() {
+    return [
+        { id: '6a7b8c' }
+    ]
+}
