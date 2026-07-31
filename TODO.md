@@ -1,7 +1,7 @@
 # todo
 
 ✅ SSG
-- styling
+✅ styling
 - Siemens ix
 - api routen + Security
 - filtern mit searchParams

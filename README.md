@@ -30,3 +30,10 @@
 Achtung:
 - className statt class verwenden
 - Helperlib: clsx
+
+## iX
+
+INstallation:
+- npm install @siemens/ix @siemens/ix-react @siemens/ix-icons
+- Theme integration (global.css): @import '@siemens/ix/dist/siemens-ix/siemens-ix.css';
+- root layout theme anwenden: data-ix-theme="classic" data-ix-color-schema="dark"

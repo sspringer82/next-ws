@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@import '@siemens/ix/dist/siemens-ix/siemens-ix.css';
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
