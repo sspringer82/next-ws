@@ -1,4 +1,4 @@
-import { getMovieById } from "@/api/movie.api";
+import { getAllMovies, getMovieById } from "@/api/movie.api";
 import { Movie } from "@/components/list/movie";
 import { NextPage } from "next";
 
@@ -25,7 +25,9 @@ const MovieDetailPage: NextPage<Props> = async ({ params }) => {
 export default MovieDetailPage;
 
 export async function generateStaticParams() {
-    return [
-        { id: '6a7b8c' }
-    ]
+    const movies = await getAllMovies();
+    return movies.map(movie => ({ id: movie.id }));
+    // return [
+    //     { id: '6a7b8c' }
+    // ]
 }
