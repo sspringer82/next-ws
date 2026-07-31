@@ -1,7 +1,5 @@
 @import "tailwindcss";
 
-@import '@siemens/ix/dist/siemens-ix/siemens-ix.css';
-
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -26,3 +24,5 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@import '@siemens/ix/dist/siemens-ix/siemens-ix.css';

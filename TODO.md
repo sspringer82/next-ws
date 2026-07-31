@@ -2,7 +2,7 @@
 
 ✅ SSG
 ✅ styling
-- Siemens ix
+✅ Siemens ix
 - api routen + Security
 - filtern mit searchParams
 - Kombination Client/Server

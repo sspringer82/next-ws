@@ -1,5 +1,6 @@
 import { getAllMovies, getMovieById } from "@/api/movie.api";
 import { Movie } from "@/components/list/movie";
+import { IxButton } from "@siemens/ix-react";
 import { NextPage } from "next";
 
 type Props = {
@@ -20,6 +21,7 @@ const MovieDetailPage: NextPage<Props> = async ({ params }) => {
     return <div>
         <h1>{movie.title}</h1>
         <article>({movie.year})</article>
+        <IxButton variant="secondary">click me</IxButton>
     </div>
 }
 export default MovieDetailPage;
