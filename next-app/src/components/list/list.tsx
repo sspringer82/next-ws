@@ -1,5 +1,6 @@
 import { type ReactNode } from "react";
 import ListItem from "./list-item";
+import './list.css'
 
 import { type Movie } from './movie'
 
@@ -18,19 +19,20 @@ const List: React.FC<Props> = ({ movies }) => {
     }
 
     return (
-        <>
+        <div className="movieList">
             <table>
-                <thead>
-                    <tr>
+                <thead style={{ backgroundColor: '#FFFFCC', color: 'black', fontWeight: 'bolder' }}>
+                    <tr >
                         <th>Title</th>
                         <th>Year</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     {tableContent}
                 </tbody>
             </table>
-        </>
+        </div>
     );
 }
 

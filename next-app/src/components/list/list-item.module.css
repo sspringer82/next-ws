@@ -1,0 +1,13 @@
+.link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.link:hover {
+    color: lightblue
+}
+
+/* 
+import style from './list-item.module.css';
+<Link className={style.link}>
+*/

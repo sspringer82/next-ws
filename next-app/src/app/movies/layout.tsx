@@ -6,7 +6,7 @@ type Props = {
 
 const MoviesLayout: React.FC<Props> = ({ children }) => {
     return <div>
-        <header style={{ width: '100%', height: '200px', backgroundColor: 'hotpink' }}>Header</header>
+        <header>Header</header>
         {children}
     </div>
 }

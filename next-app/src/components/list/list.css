@@ -1,0 +1,18 @@
+.movieList {
+    table {
+        border-collapse: collapse;
+    }
+
+    td {
+        border: 1px solid lightgrey;
+        padding: 2px 10px;
+    }
+
+    tr:nth-child(2n) {
+        background-color: darkgrey;
+    }
+
+    tr.new {
+        background-color: darkgreen;
+    }
+}
