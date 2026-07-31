@@ -14,3 +14,7 @@ export async function getAllMovies(): Promise<Movie[]> {
 export async function getMovieById(id: string): Promise<Movie> {
     return ky(`http://localhost:3001/movies/${id}`).json();
 }
+
+export async function deleteMovie(id: string): Promise<void> {
+    await ky.delete(`http://localhost:3001/movies/${id}`);
+}

@@ -8,6 +8,7 @@ import style from './list-item.module.css'
 import Button from "../Button";
 import { useRouter } from "next/navigation";
 import { PropsWithChildren } from "react";
+import DeleteButton from "./delete-button";
 
 
 type Props = {
@@ -27,6 +28,9 @@ const ListItem: React.FC<Props> = ({ movie }) => {
         <td>
             <Button onClick={() => router.replace(`/movies/${movie.id}`)}>Details</Button>
             {/* <Link className={style.link} href={`/movies/${movie.id}`}>Details</Link> */}
+        </td>
+        <td>
+            <DeleteButton id={movie.id} />
         </td>
     </tr>
 }

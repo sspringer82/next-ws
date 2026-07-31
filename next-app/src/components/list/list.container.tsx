@@ -1,13 +1,17 @@
 import { getAllMovies } from "@/api/movie.api";
 import { Movie } from "./movie";
 import List from "./list";
-import ky from "ky";
 
-const ListContainer: React.FC = async () => {
+type Props = {
+    filter: string;
+}
+
+const ListContainer: React.FC<Props> = async ({ filter }) => {
     let movies: Movie[] = [];
     try {
-        // movies = await getAllMovies();
-        movies = await ky.get('http://localhost:3000/movies/api').json<Movie[]>();
+        movies = (await getAllMovies())
+            .filter(movie => movie.title.toLowerCase().includes(filter.toLowerCase()));
+        // movies = await ky.get('http://localhost:3000/movies/api').json<Movie[]>();
     } catch (error) {
         console.log(error);
         return <div>whoops, an error occurred</div>

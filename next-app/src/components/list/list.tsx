@@ -3,6 +3,8 @@ import ListItem from "./list-item";
 import './list.css'
 
 import { type Movie } from './movie'
+import { IxInput } from "@siemens/ix-react";
+import Filter from "./filter";
 
 type Props = {
     movies: Movie[];
@@ -20,6 +22,7 @@ const List: React.FC<Props> = ({ movies }) => {
 
     return (
         <div className="movieList">
+            {/* <Filter /> */}
             <table>
                 <thead style={{ backgroundColor: '#FFFFCC', color: 'black', fontWeight: 'bolder' }}>
                     <tr >

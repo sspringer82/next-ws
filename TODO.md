@@ -3,8 +3,8 @@
 ✅ SSG
 ✅ styling
 ✅ Siemens ix
-- api routen + Security
-- filtern mit searchParams
+✅ api routen + Security
+✅ filtern mit searchParams
 - Kombination Client/Server
 - Server Functions + revalidate (DELETE)
 - Form handling
