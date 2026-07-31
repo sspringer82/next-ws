@@ -10,3 +10,7 @@ export async function getAllMovies(): Promise<Movie[]> {
 
     return ky('http://localhost:3001/movies').json();
 }
+
+export async function getMovieById(id: string): Promise<Movie> {
+    return ky(`http://localhost:3001/movies/${id}`).json();
+}
